@@ -104,22 +104,15 @@ public class Test extends HookImpl {
     @org.junit.jupiter.api.Test
     public void AndroidBasicTestSuccess01() throws InterruptedException {
 
+        step.waitBySecond(20);
+        appiumDriver.findElement(By.xpath("//*[contains(@resource-id, 'android:id/button2') and contains(@text, 'İPTAL')]")).click();
         step.waitBySecond(3);
-        appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_trademarks")).click();
-        step.waitBySecond(3);
-        appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_categories")).click();
-        step.waitBySecond(3);
-        appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_campaign")).click();
-        step.waitBySecond(3);
-        appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_trademarks")).click();
-        step.waitBySecond(3);
-        appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_categories")).click();
-        step.waitBySecond(3);
-        appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_campaign")).click();
-        step.waitBySecond(3);
+        //appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_categories")).click();
+        //step.waitBySecond(3);
+        //appiumDriver.findElement(By.id("com.gratis.android:id/nav_graph_campaign")).click();
+        //step.waitBySecond(3);
 
     }
-
     @org.junit.jupiter.api.Test
     public void AndroidBasicTestSuccess02() throws InterruptedException {
 
