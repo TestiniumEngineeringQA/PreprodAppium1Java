@@ -45,8 +45,8 @@ public class HookImpl {
         try {
             logger.info("************************************  BeforeScenario  ************************************");
 
-            localUrl = new URL("http://127.0.0.1:4723/wd/hub");
-            hubUrl = new URL("http://172.25.1.159:4444/wd/hub");
+            localUrl = new URL("http://172.25.1.12:4444/wd/hub");
+            hubUrl = new URL("http://172.25.1.12:4444/wd/hub");
 
             if (StringUtils.isEmpty(System.getProperty("key"))) {
                 if (localAndroid) {
